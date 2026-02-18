@@ -1,0 +1,49 @@
+{
+  "active": {
+    "source": {
+      "migrations": {
+        "up": "upFs",
+        "down": "downFs"
+      },
+      "seeds": "seedsFs"
+    },
+    "database": "pg",
+    "environment": "local"
+  },
+  "environments": {
+    "local": "./.env"
+  },
+  "databases": {
+    "pg": {
+      "driver": "pg",
+      "config": {
+        "host": "${DB_HOST}",
+        "port": "${DB_PORT}",
+        "user": "${DB_USER}",
+        "password": "${DB_PASSWORD}",
+        "name": "${DB_NAME}",
+        "ssl": "${DB_SSL}"
+      }
+    }
+  },
+  "sources": {
+    "upFs": {
+      "driver": "fs",
+      "config": {
+        "dir": "./migrations/up"
+      }
+    },
+    "downFs": {
+      "driver": "fs",
+      "config": {
+        "dir": "./migrations/down"
+      }
+    },
+    "seedsFs": {
+      "driver": "fs",
+      "config": {
+        "dir": "./seeds"
+      }
+    }
+  }
+}
