@@ -14,6 +14,7 @@ import (
 	"github.com/easynow112/dbkit/config"
 	"github.com/easynow112/dbkit/db"
 	_ "github.com/easynow112/dbkit/db/pg"
+	_ "github.com/easynow112/dbkit/db/sqlite"
 	"github.com/easynow112/dbkit/migrations"
 	"github.com/easynow112/dbkit/msg"
 	"github.com/easynow112/dbkit/seeds"

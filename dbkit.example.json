@@ -24,6 +24,12 @@
         "name": "${DB_NAME}",
         "ssl": "${DB_SSL}"
       }
+    },
+    "sqlite": {
+      "driver": "sqlite",
+      "config": {
+        "path": "./db.sqlite"
+      }
     }
   },
   "sources": {
